@@ -3,13 +3,11 @@
 
 import numpy as np
 
+N = 2 # число наблюдений
+
 a = np.array([[1, 2, 3, 3, 1],[6, 8, 11, 10, 7]])
-print(a)
-
 mean_a = a.mean(axis=1)
-print(mean_a)
-
 a_centered = np.array([(a[0] - mean_a[0]),(a[1] - mean_a[1])])
-print(a_centered)
 
-print(a_centered[0][0])
+a_centered_sp = np.dot(a_centered[0], a_centered[1])
+print(f'ковариация двух признаков массива а - {a_centered_sp / (N - 1)}')
