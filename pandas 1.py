@@ -20,7 +20,7 @@ data_book = {
 }
 
 authors = pd.DataFrame(data_authors)
-book = pd.DataFrame(data_book)
+books = pd.DataFrame(data_book)
 
 print(authors.head())
-print(book.head())
+print(books.head())
