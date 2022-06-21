@@ -15,3 +15,4 @@ print(a_centered)
 
 a_centered_sp = np.dot(a_centered[:,0], a_centered[:,1])
 print(f'ковариация двух признаков массива а - {a_centered_sp / (N - 1)}')
+
