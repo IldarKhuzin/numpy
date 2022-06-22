@@ -18,7 +18,7 @@ books = pd.DataFrame(data_book)
 
 authors_price = pd.merge(left=authors,
          right=books,
-         on="authors_id")\
+         on="authors_id")
 
 top = authors_price.sort_values(by='price', ascending=False)
 
