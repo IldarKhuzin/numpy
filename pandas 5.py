@@ -31,4 +31,3 @@ authors_price['cover'] = ['твердая', 'мягкая', 'мягкая', 'т�
 print(authors_price)
 book_info = pd.pivot_table(authors_price, index=["authors_name"],values= ['price'], columns= ['cover'], aggfunc= np.sum)
 print(book_info)
-
