@@ -22,6 +22,7 @@ authors_price = pd.merge(left=authors,
          right=books,
          on="authors_id")
 
+
 authors_list = authors_price.authors_name.unique()
 
 stat0 = authors_price[authors_price.authors_name == authors_list[0]]
