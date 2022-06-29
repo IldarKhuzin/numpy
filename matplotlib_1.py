@@ -123,4 +123,3 @@ plt.hist(cl_0['V1'], bins=20, density=True, alpha=0.5, label='Class 0', color='g
 plt.hist(cl_1['V1'], bins=20, density=True, alpha=0.5, label='Class 1', color='red')
 plt.legend()
 plt.show()
-
