@@ -20,6 +20,7 @@ authors_price = pd.merge(left=authors,
          right=books,
          on="authors_id")
 
+
 top = authors_price.sort_values(by='price', ascending=False)
 
 top_5 = top.head(5)
